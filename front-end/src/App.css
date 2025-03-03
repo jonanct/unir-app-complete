@@ -1,0 +1,298 @@
+/* Estilo de la barra de navecación */
+.header {
+  font-family: "Roboto", sans-serif;
+}
+
+.header__container {
+  padding: 0 15px;
+}
+
+.header__logo {
+  max-height: 100px;
+}
+
+.header__navigation {
+  background-color: #b3c8cf;
+}
+
+.header__list {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__item {
+  display: inline-block;
+}
+
+.header__link {
+  font-weight: 500;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.header__link:hover {
+  color: black;
+  background-color: #bed7dc;
+}
+
+.header__toggle {
+  border: none;
+  background: transparent;
+}
+
+.header__toggle-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 992px) {
+  .header__navigation {
+    text-align: center;
+  }
+
+  .header__list {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Estilo de la barra de navecación */
+/*------------------------------------------------------*/
+/* Estilo para HOME */
+.block__container {
+  font-family: "Roboto Slab", sans-serif;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("/ukiback.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.block__container-title {
+  margin: 0;
+}
+
+.block__container-text {
+  margin: 0;
+}
+
+/* Estilo para HOME */
+/*------------------------------------------------------*/
+/* Estilos para Products */
+
+.products {
+  padding: 20px;
+}
+
+.products__title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.products__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.products__item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.products__item:hover {
+  transform: translateY(-5px);
+}
+
+.products__item-image {
+  width: auto;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.products__item-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.products__item-description {
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+.products__item-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.products__item-button {
+  margin-top: 15px;
+  width: 100%;
+}
+/* Estilos para Products */
+/*------------------------------------------------------*/
+/* Estilos para la tienda */
+.products {
+  text-align: center;
+}
+
+.cart__text {
+  text-align: center;
+}
+.cart {
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cart__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cart__empty {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.cart__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.cart__item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.cart__item-info {
+  flex-grow: 1;
+}
+
+.cart__item-name {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.cart__item-price {
+  color: #007bff;
+}
+
+.cart__item-quantity {
+  width: 60px;
+}
+
+.cart__item-remove {
+  margin-left: auto;
+}
+
+.cart__purchase-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart__purchase-button:hover {
+  background-color: #218838;
+}
+/* Estilos para la tienda */
+/*------------------------------------------------------*/
+/* Estilos para Eventos */
+.events {
+  text-align: center;
+}
+
+.events__item-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.carrousel__text {
+  text-align: center;
+}
+.carousel-image {
+  max-width: 50%;
+  height: 20%;
+  margin: 0 auto;
+}
+
+.testimonials {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.testimonial {
+  margin-bottom: 15px;
+}
+
+.testimonial__h2 {
+  text-align: center;
+}
+
+.testimonial__text {
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial__author {
+  text-align: center;
+  font-weight: bold;
+}
+
+.about {
+  text-align: center;
+}
+
+.about__img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
