@@ -1,7 +1,0 @@
-# Configuración para el backend
-[backend]
-command = "cd back-end && npm install && npm run start"
-
-# Configuración para el frontend
-[frontend]
-command = "cd front-end && npm install && npm run build"
